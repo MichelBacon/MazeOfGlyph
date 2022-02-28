@@ -1,10 +1,8 @@
 fileFormatVersion: 2
-guid: 791584f08662dc444bdc56f253bea401
-labels:
-- MapGen
-timeCreated: 1509228416
+guid: 1921cd01be667e64691719d006cb31e3
+timeCreated: 1514748380
 licenseType: Store
-DefaultImporter:
+TextScriptImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 

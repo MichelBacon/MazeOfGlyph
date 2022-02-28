@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: 791584f08662dc444bdc56f253bea401
-labels:
-- MapGen
-timeCreated: 1509228416
+guid: 6564bb23c07e1fe45a3918ad2d968179
+folderAsset: yes
+timeCreated: 1509230434
 licenseType: Store
 DefaultImporter:
-  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
