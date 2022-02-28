@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 6d9fd415e30c0e247972a59c3603d75d
+guid: 791584f08662dc444bdc56f253bea401
+labels:
+- MapGen
+timeCreated: 1509228416
+licenseType: Store
 DefaultImporter:
   externalObjects: {}
   userData: 
