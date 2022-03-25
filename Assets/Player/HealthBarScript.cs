@@ -25,7 +25,9 @@ public class HealthBarScript : MonoBehaviour
     public void DamagePlayer( int damage )
     {
         curHealth -= damage;
-
+        if(curHealth == 0) {
+            Debug.Log("DEAD");
+        }
         healthBar.SetHealth( curHealth );
     }
 }
