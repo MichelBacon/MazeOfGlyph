@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthBarScript : MonoBehaviour
 {
@@ -18,7 +19,8 @@ public class HealthBarScript : MonoBehaviour
     {
         curHealth -= damage;
         if(curHealth == 0) {
-            Debug.Log("DEAD");
+            SceneManager.LoadScene(3);
+            Cursor.lockState = CursorLockMode.None;
         }
         healthBar.SetHealth( curHealth );
     }

@@ -27,7 +27,7 @@ public class TriggerTurret : MonoBehaviour
             flashlight = GameObject.FindGameObjectWithTag("Player").GetComponent<Flashlight>();
             healthBarScript = GameObject.FindGameObjectWithTag("Player").GetComponent<HealthBarScript>();
             if(flashlight.isOn) {
-                healthBarScript.DamagePlayer(10);
+                healthBarScript.DamagePlayer(20);
                 audioSource.Play();
             }
         }
