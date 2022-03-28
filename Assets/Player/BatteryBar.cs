@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class BatteryBar : MonoBehaviour
 {
-    public Slider healthBar;
-    public BatteryBarScript playerHealth;
+    public Slider batteryBar;
+    public Flashlight flashlight;
 
     private void Start()
     {
-        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<BatteryBarScript>();
-        healthBar = GetComponent<Slider>();
-        healthBar.maxValue = playerHealth.maxHealth;
-        healthBar.value = playerHealth.maxHealth;
+        flashlight = GameObject.FindGameObjectWithTag("Player").GetComponent<Flashlight>();
+        batteryBar = GetComponent<Slider>();
+        batteryBar.maxValue = flashlight.maxBatteryPourcentage;
+        batteryBar.value = flashlight.currentBatteryPourcentage;
     }
 
-    public void SetHealth(int hp)
+    public void SetHealth(float hp)
     {
-        healthBar.value = hp;
+        batteryBar.value = hp;
     }
 }
