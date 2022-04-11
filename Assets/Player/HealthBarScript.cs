@@ -7,6 +7,7 @@ public class HealthBarScript : MonoBehaviour
 {
     public int curHealth = 0;
     public int maxHealth = 100;
+    public AudioSource healthSound;
 
     public HealthBar healthBar;
 
@@ -17,6 +18,7 @@ public class HealthBarScript : MonoBehaviour
 
     public void DamagePlayer( int damage )
     {
+        healthSound.Play();
         curHealth -= damage;
         if(curHealth == 0) {
             SceneManager.LoadScene(3);
